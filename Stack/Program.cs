@@ -10,7 +10,7 @@ namespace LinkedList
         {
             while (true)
             {
-                Console.WriteLine("Enter the Choice\n1)Stack\n2)Pop and Peek\n3)Enqueue");
+                Console.WriteLine("Enter the Choice\n1)Stack\n2)Pop and Peek\n3)Enqueue\n4)Dequeue");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -39,6 +39,15 @@ namespace LinkedList
                         qx.Enqueue(56);
                         qx.Enqueue(30);
                         qx.Enqueue(70);
+                        qx.DisplayQueue();
+                        break;
+                    case 4:
+                        QueueEx qx = new QueueEx();
+                        qx.Enqueue(56);
+                        qx.Enqueue(30);
+                        qx.Enqueue(70);
+                        qx.DisplayQueue();
+                        qx.Dequeue();
                         qx.DisplayQueue();
                         break;
                 }
